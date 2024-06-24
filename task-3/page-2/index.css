@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.gridContainer {
+  display: grid;
+  height: fit-content;
+  max-width: 100vw;
+  grid-template-rows: 6vh 84vh 5vh 5vh;
+  background-color: black;
+}
+
+.grid-item-1 {
+  background-color: #222222;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;
+}
+
+.navLeft > p {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+}
+
+.navLeft > img {
+  height: 50px;
+  width: 50px;
+  margin-left: 24px;
+}
+
+.navRight > li{
+  margin: 0px 30px;
+  color: #3FD28B;
+  list-style-type: none;
+  padding: 18px 0px;
+  font-weight: 600;
+}
+
+.navRight > li:hover{
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.navRight > div{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navRight > div > div{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.navRight > div > div > i{
+  font-size: 24px;
+  margin: 0px 30px;
+}
+
+.navRight > div > div> p{
+  position: absolute;
+  top: -10px;
+  right: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.navRight > div > div > .msg{
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.navRight > div > i{
+  margin: 0px 30px;
+  display: none;
+}
+
+.grid-item-2 {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  flex-direction: column;
+}
+
+.courseHeader {
+  height: 64px;
+  width: 100%;
+  background-color: #8ddc97;
+  display: flex;
+  align-items: center;
+}
+
+.courseHeader > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courseHeader > div:hover{
+  border-bottom: 5px solid black;
+}
+
+.ch1 {
+  flex: 0.5;
+}
+
+.ch2 {
+  flex: 0.5;
+}
+
+.courseHeader > div > img {
+  height: 32px;
+  width: 21px;
+}
+
+.courseHeader > div > p {
+  margin-left: 15px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.courseHeader > div > p > span {
+  color: #222222;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.courseResults {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(202, 200, 200);
+}
+
+.courseResults > div {
+  display: flex;
+  align-items: center;
+}
+
+.cr2 {
+  display: flex;
+  align-items: center;
+}
+
+.cr2 > p {
+  font-size: 12px;
+}
+
+.cr2 > select {
+  margin: 0px 15px;
+  width: 150px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #e0e1e1;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 2px 0px;
+  color: #222222;
+  font-weight: 500;
+  outline: none;
+}
+
+.cr2 > img {
+  height: 24px;
+  width: 12px;
+}
+
+.courseItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  overflow: auto;
+  padding: 20px 0px;
+}
+
+.citem-1,
+.citem-2,
+.citem-3,
+.citem-4 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  height: 346px;
+  /* width: 50%; */
+  background-color: #ffffff;
+  position: relative;
+}
+
+.courseItemsMain {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+.cimage {
+  flex: 0.28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+.cimage > img {
+  height: 210px;
+  width: 182px;
+}
+
+.cContents {
+  width: 100%;
+  flex: 0.72;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  /* position: relative; */
+  /* background-color: aqua; */
+}
+
+.cc-1{
+  font-size: 20px;
+  color: #222222;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cc-2 {
+  color: #666666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.cc-2 > span {
+  color: #1f7a54;
+}
+
+.cc-3 {
+  color: #666666;
+  font-size: 14px;
+}
+
+.cc-3 > span {
+  font-weight: bold;
+}
+
+.cc-4 > select {
+  /* margin: 0px 15px; */
+  width: 400px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #e0e1e1;
+  margin-top: 5px;
+  font-size: 20px;
+  padding: 2px 0px;
+  color: #222222;
+  font-weight: 500;
+  outline: none;
+}
+
+.cc-5 {
+  color: #666666;
+  font-size: 14px;
+}
+
+.cc-6{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.cc-7{
+  color: #D80000;
+  background-color: #FFE4E6;
+  padding: 3px 5px;
+  position: absolute;
+  left: 0px;
+  top: -16px;
+}
+
+.courseItemsIcons {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.courseItemsIcons > img {
+  height: 34px;
+  width: 32px;
+}
+
+.grid-item-3 {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-3 > p {
+  margin-left: 20px;
+  color: #1f7a54;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.grid-item-4 {
+  background-color: #e0e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-4 > img {
+  height: 40px;
+  width: 40px;
+}
+
+.grid-item-4 > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.textComp {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+
+.textComp > p {
+  margin-left: 10px;
+}
+
+.textComp > span{
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .navRight > div > i{
+        display: inline-block;
+    }
+
+    .cimage > img{
+      height: 180px;
+      width: 140px;
+    }
+
+    .cContents{
+      margin-left: 10px;
+    }
+
+    .cc-1{
+      font-size: 18px;
+    }
+
+    .cc-2{
+      font-size: 12px;
+    }
+
+    .cc-3{
+      font-size: 12px;
+    }
+
+    .courseItems{
+        grid-template-columns: 1fr;
+    }
+
+    .navRight > li{
+      display: none;
+    }
+
+    .textComp > p{
+      font-size: 12px;
+    }
+
+    .textComp > span{
+      font-size: 11px;
+    }
+
+    .cimage{
+      margin-top: -30px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
