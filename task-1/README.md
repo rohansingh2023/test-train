@@ -1,4 +1,4 @@
-# Day 1 Run through the HTML CSS crash course - we will use Zoom sessions -  
+# Day 1 Run through the HTML CSS crash course - 
 
 ## Setup VS Code for HTML5, CSS, JS development - https://www.youtube.com/watch?v=xn7-Wx1tD_4 
 - https://www.youtube.com/watch?v=qz0aGYrrlhU  - 1 hr 
