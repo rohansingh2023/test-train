@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   font-family: "Quicksand", sans-serif;
 }
 
 .gridContainer {
   display: grid;
-  height: fit-content;
+  max-height: 100vh;
   max-width: 100vw;
   grid-template-rows: 6vh 84vh 5vh 5vh;
   background-color: black;
@@ -318,9 +321,13 @@ body {
   justify-content: space-evenly;
 }
 
-.courseItemsIcons > img {
-  height: 34px;
-  width: 32px;
+.courseItemsIcons > button{
+  border: none;
+  background-color: transparent;
+}
+
+.courseItemsIcons > button:disabled{
+  opacity: 0.3;
 }
 
 .grid-item-3 {
@@ -369,7 +376,17 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 320px){
+  .navLeft > p {
+    display: none;
+  }
+
+  .navRight > div > div{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
     .navRight > div > i{
         display: inline-block;
     }
